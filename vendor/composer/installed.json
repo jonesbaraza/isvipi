@@ -1,0 +1,112 @@
+{
+    "packages": [
+        {
+            "name": "mukto90/ncrypt",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mukto90/ncrypt.git",
+                "reference": "c66236716492796fcc7c28e07a5e7752daeb9225"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mukto90/ncrypt/zipball/c66236716492796fcc7c28e07a5e7752daeb9225",
+                "reference": "c66236716492796fcc7c28e07a5e7752daeb9225",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2018-05-15T06:37:54+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Nazmul Ahsan",
+                    "email": "n.mukto@gmail.com",
+                    "homepage": "https://nazmulahsan.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple PHP class to encrypt a string and decrypt an encrypted string",
+            "homepage": "https://github.com/mukto90/ncrypt",
+            "keywords": [
+                "2 way encryption and decryption",
+                "decryption",
+                "encryption",
+                "encryption and decryption"
+            ],
+            "support": {
+                "issues": "https://github.com/mukto90/ncrypt/issues",
+                "source": "https://github.com/mukto90/ncrypt/tree/v1.0"
+            },
+            "install-path": "../mukto90/ncrypt"
+        },
+        {
+            "name": "thingengineer/mysqli-database-class",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ThingEngineer/PHP-MySQLi-Database-Class.git",
+                "reference": "5159467ae081adbe96586e45e65a58c0fe7a32ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ThingEngineer/PHP-MySQLi-Database-Class/zipball/5159467ae081adbe96586e45e65a58c0fe7a32ce",
+                "reference": "5159467ae081adbe96586e45e65a58c0fe7a32ce",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2022-09-13T15:42:11+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "MysqliDb.php",
+                    "dbObject.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Campbell",
+                    "email": "josh.lee.campbell@gmail.com",
+                    "homepage": "https://github.com/thingengineer",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Alexander V. Butenko",
+                    "email": "a.butenka@gmail.com",
+                    "homepage": "http://smarttechdo.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP MySQL Wrapper and object mapper which utilizes MySQLi and prepared statements",
+            "support": {
+                "issues": "https://github.com/ThingEngineer/PHP-MySQLi-Database-Class/issues",
+                "source": "https://github.com/ThingEngineer/PHP-MySQLi-Database-Class/tree/master"
+            },
+            "install-path": "../thingengineer/mysqli-database-class"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
