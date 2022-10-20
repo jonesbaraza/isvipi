@@ -45,4 +45,4 @@ If you would like to contribute to this project by adding a feature or fixing a 
 4. Make the necessary updates, push and make a pull-request. We will review it and merge to the development branch.
 
 ## Support
-You can support the development and maintenace of this software by making a donation.
+You can support the development and maintenace of this software by making a donation with Github Sponsors [here](https://github.com/sponsors/jonesbaraza/)
