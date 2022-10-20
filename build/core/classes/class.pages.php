@@ -66,7 +66,7 @@
         }
 
         public function load_theme_file($param = []){			
-            global $meta, $ice, $converter, $tInfo, $PAGE, $memberinfo;
+            global $meta, $ice, $pages, $converter, $tInfo, $PAGE, $memberinfo;
 
             if (is_file(ICE_THEMES . THEME . '/'.$param['folder'].'/' . $param['file'] . '.php')){
 				require_once ICE_THEMES . THEME . '/'.$param['folder'].'/' . $param['file'] . '.php';
