@@ -16,4 +16,19 @@
         with this program; if not, write to the Free Software Foundation, Inc.,
         51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
     *****************************************************************************/ 
-    echo "here"; exit();
+    require_once(ICE_CORE .'classes/class.pages.php');
+    global $pages;
+
+    $pages = new pages();
+
+    $requestedFile = ICE_THEMES . THEME .'/'.preg_replace('/[^\w]/','',$PAGE[0]).'.php';
+
+    if($PAGE[0] === 'do' && isset($PAGE[1]) && is_file(ICE_PROCESS . 'process.' . $page[1] . '.php')){
+        require_once(ICE_PROCESS . 'process.' . $page[1] . '.php');
+    } else if($PAGE[0] === 'runcrons'){
+        require_once(ICE_CLASSES . 'global/class.cronjobs.php');
+    } else if(is_file($requestedFile)){
+        $pages->load_page($PAGE);
+    } else {
+        $pages->page_not_found();
+    }

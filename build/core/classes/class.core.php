@@ -21,16 +21,16 @@
 
 		public function __construct() {
 			//check if ICE is installed
-			$this->is_installed();
+			$this->_installed();
 
 			//include core files
 			$this->_core_files();
 
 			//configure our application
-			$this->configurations();
+			$this->_temp_configurations();
 		}
 
-        public function is_installed(){
+        public function _installed(){
             //if not installed, we start the install process
             if(!is_file(ICE_BUILD . 'database/db.php')){
                 echo "install the site"; exit();
@@ -41,11 +41,9 @@
             require_once ICE_CORE .'functions/function.core.php';
             require_once ICE_VENDOR . 'autoload.php';
             require_once(ICE_BUILD . 'database/database.php');
-	        //require_once ICE_VENDOR . 'encrypt_decrypt/class.encode.php';
-            //require_once ICE_CORE .'classes/class.pages.php';
         }
 
-        public function configurations(){
+        public function _temp_configurations(){
 			global $db;
 
             //toggle demo mode
@@ -146,9 +144,6 @@
 
 			//set runtime configurations
 			$this->runtime_configurations();
-
-			//Set global variables
-			//$this->pages = new pages();
 			
 			$URL = str_replace(
 				array( '\\', '../' ),
@@ -184,18 +179,7 @@
 				($URL == 'index.html')
 			) ? array('index') : explode('/',html_entity_decode($URL));
 
-			$requestedFile = ''.ICE_THEMES. THEME .'/'.preg_replace('/[^\w]/','',$PAGE[0]).'.php';
-			
-			if ($PAGE[0] === 'do' && isset($PAGE[1])){
-				$this->pages->process_request($PAGE);					
-			} else if($PAGE[0] === 'runcrons'){
-				$this->pages->run_cron();
-			} else if (is_file($requestedFile)) {
-                require_once(ICE_CORE .'pages.php');
-			} else {
-				$this->pages->page_not_found();
-			}
-
+			require_once(ICE_CORE .'pages.php');
 			exit();
         }
     }

@@ -25,8 +25,7 @@
 	//@_Directories
 	define('ICE_BUILD', ICE_ROOT . 'build' . DIRECTORY_SEPARATOR);
 	define('ICE_CORE', ICE_BUILD . 'core' . DIRECTORY_SEPARATOR);
-	define('ICE_CLASSES', ICE_BUILD . 'classes' . DIRECTORY_SEPARATOR);
-	define('ICE_FUNCTIONS', ICE_BUILD . 'functions' . DIRECTORY_SEPARATOR);
+	define('ICE_CONTROLLERS', ICE_BUILD . 'controllers' . DIRECTORY_SEPARATOR);
 	define('ICE_CRON', ICE_BUILD . 'cron' . DIRECTORY_SEPARATOR);
 	define('ICE_THEMES', ICE_ROOT . 'themes' . DIRECTORY_SEPARATOR);
 	define('ICE_VENDOR', ICE_ROOT . 'vendor' . DIRECTORY_SEPARATOR);
