@@ -16,7 +16,7 @@
         with this program; if not, write to the Free Software Foundation, Inc.,
         51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
     *****************************************************************************/ 
-    function clean_post($var){
+  function clean_post($var){
 		$val = @trim($_POST[$var]);
 		$val = stripslashes($val);
 		return htmlspecialchars($val);
@@ -32,3 +32,14 @@
 		$str = html_entity_decode($str);
 		return $str;
 	}
+
+  function error_404(){
+    global $ice, $converter;
+    echo "Not Found"; exit();
+  }
+
+  function forbidden_page(){
+    header('HTTP/1.0 403 Forbidden');
+		die('<h2>Access Denied!</h2>');
+		exit();
+  }
