@@ -10,9 +10,18 @@
 
             return $meta;
         }
+
+        public function get_genders(){
+            global $db;
+
+            $db->orderBy('id', 'ASC');
+            $res = $db->get('genders', null, "*");
+            return $res;
+        }
     }
 
     global $meta;
 
     $index = new index();
     $meta = $index->meta();
+    $genders = $index->get_genders();

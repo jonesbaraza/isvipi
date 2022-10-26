@@ -20,7 +20,8 @@
     <?php 
         $pages->load_styles(
             array(
-                ''.ICE_THEMES_URL.THEME.'/styles/css/app.css'
+                ''.ICE_THEMES_URL.THEME.'/styles/css/app.css',
+                ''.ICE_THEMES_URL.THEME.'/styles/css/custom.css'
             ),
             'css'
         ); 

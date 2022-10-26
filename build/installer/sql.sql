@@ -15,3 +15,12 @@ INSERT INTO `isv_configurations` (`config_name`, `config_value`) VALUES
 ('logo','logo.png'),('favicon','favicon.ico'),('homebg','home.jpg'),('loginbg','login.jpg'), ('contactbg','contact.jpg'),
 ('otherbg','other.jpg'),('notfoundbg', '404.jpg'),('theme','default'),('lang','en'),('title_separator',' | '),('site_timezone','Atlantic/St_Helena'),
 ('display_errors',0),('contact_email','support@isvipi.com');
+
+CREATE TABLE IF NOT EXISTS `isv_genders` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `gender` varchar(50) UNIQUE COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+INSERT INTO `isv_genders` (`gender`) VALUES 
+('male'), ('female'),('transgender'),('non-binary'),('prefer not to say')

@@ -84,7 +84,7 @@
 				if(is_file(ICE_UPLOADS . 'logos/'. LOGO)){
 					return ICE_URL."build/uploads/logos/". LOGO;
 				} else {
-					return ICE_URL.'build/media/logo.jpg';
+					return ICE_URL.'build/media/logo.png';
 				}
 			} else {
                 if(is_file(ICE_UPLOADS . '/'. $media_type)){
