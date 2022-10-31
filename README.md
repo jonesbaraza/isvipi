@@ -1,4 +1,4 @@
-<img alt="IsVipi Community Engine Logo" src="https://isvipi.com/themes/new/style/img/logo.png" width="150">
+<img alt="IsVipi Community Engine Logo" src="https://isvipi.com/build/media/logo.png" width="150">
 
 > IsVipi Community Engine is an open source social networking, membership, dating, and community software released for free under GPL V3.
 

@@ -41,3 +41,6 @@
 	define('ICE_VENDOR_URL', ICE_URL . 'vendor' . DIRECTORY_SEPARATOR);
 	define('ICE_THEMES_URL', ICE_URL . 'themes' . DIRECTORY_SEPARATOR);
 	define('ICE_ACTIONS_URL', ICE_URL . 'do' . DIRECTORY_SEPARATOR);
+
+	//current installed version of IsVipi Community Engine
+	define("VERSION", "1.0");

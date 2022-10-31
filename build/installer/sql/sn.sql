@@ -22,5 +22,5 @@ CREATE TABLE IF NOT EXISTS `isv_genders` (
   PRIMARY KEY (`id`)
 ) DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
 
-INSERT INTO `isv_genders` (`gender`) VALUES 
-('male'), ('female'),('transgender'),('non-binary'),('prefer not to say')
+INSERT INTO `isv_genders` (`id`,`gender`) VALUES 
+('','male'), ('','female'),('','transgender'),('','non-binary'),('','prefer not to say');

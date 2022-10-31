@@ -33,7 +33,8 @@
         public function _installed(){
             //if not installed, we start the install process
             if(!is_file(ICE_BUILD . 'database/db.php')){
-                echo "install the site"; exit();
+                require_once(ICE_BUILD .'installer/installer.php');
+				exit();
             }
         }
 
@@ -48,9 +49,6 @@
 
             //toggle demo mode
             define("DEMO_MODE", false);
-
-            //current installed version of IsVipi Community Engine
-            define("VERSION", "1.0");
 
             //toggle display of errors
             define('DEBUGGING', true);
